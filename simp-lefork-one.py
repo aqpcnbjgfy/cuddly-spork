@@ -45,6 +45,7 @@ def vertexnormal(d1, d2, d3):
     
     n2 = d2.cross(d3).normalized()
     n3 = d3.cross(d1).normalized()
+    
     n = (n1 + n2 + n3).normalized()
     if (d1 + d2 + d3).dot(n) > 0:
         return -n
